@@ -5,12 +5,12 @@ using FamiliesWebAPI.Models;
 
 namespace FamiliesWebAPI.Data.Impl
 {
-    public class WebPetsService : IPetsService
+    public class PetsWebService : IPetsService
     {
         public IList<Pet> Pets { get; private set; }
         private readonly IFamiliesService familiesService;
 
-        public WebPetsService(IFamiliesService familiesService)
+        public PetsWebService(IFamiliesService familiesService)
         {
             this.familiesService = familiesService;
             GetPetsAsync();

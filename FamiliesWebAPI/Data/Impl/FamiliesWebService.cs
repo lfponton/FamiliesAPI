@@ -6,12 +6,12 @@ using FamiliesWebAPI.Persistence;
 
 namespace FamiliesWebAPI.Data.Impl
 {
-    public class WebFamiliesService : IFamiliesService
+    public class FamiliesWebService : IFamiliesService
     {
         private IFileContext fileContext;
         private IList<Family> Families { get; }
 
-        public WebFamiliesService(IFileContext fileContext)
+        public FamiliesWebService(IFileContext fileContext)
         {
             this.fileContext = fileContext;
             Families = new List<Family>();

@@ -5,12 +5,12 @@ using FamiliesWebAPI.Models;
 
 namespace FamiliesWebAPI.Data.Impl
 {
-    public class WebAdultsService : IAdultsService
+    public class AdultsWebService : IAdultsService
     {
         public IList<Adult> Adults { get; private set; }
         private readonly IFamiliesService familiesService;
 
-        public WebAdultsService(IFamiliesService familiesService)
+        public AdultsWebService(IFamiliesService familiesService)
         {
             this.familiesService = familiesService;
             GetAdultsAsync();
